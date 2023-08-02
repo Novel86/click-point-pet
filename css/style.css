@@ -445,6 +445,18 @@ h2,
   padding-bottom: 0.3125rem;
 }
 
+h3,
+._h3 {
+  font-size: calc(20px + 15 * (100vw - 320px) / 780);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 0.3125rem;
+}
+
 ._text {
   font-size: calc(16px + 6 * (100vw - 320px) / 780);
 }
