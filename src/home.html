@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Главная" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__first-screen first-screen">
+					<div class="first-screen__body">
+						<div class="first-screen__title">
+							<h1>
+								<span>Эксперты</span> в сфере digital<br />
+								рекламы
+							</h1>
+						</div>
+						<div class="first-screen__ticker">
+							<marquee class="_text" scrollamount="10"
+								><span style="padding-right: 30px">
+									Знаем всё про интернет-маркетинг и используем инструменты
+									только в ваших интересах. Никакой воды. Только цифры. Только
+									результаты.</span
+								>
+
+								Оптимизируем присутствие в онлайне, повышаем узнаваемость
+								бренда, привлекаем целевую аудиторию и увеличиваем конверсии и
+								прибыль бизнеса, конечно же.</marquee
+							>
+						</div>
+						<div class="first-screen__content">
+							<div class="pagination">
+								<div class="first-screen-slider-pagination"></div>
+							</div>
+							<div class="first-screen__slider swiper">
+								<div class="first-screen__wrapper swiper-wrapper">
+									<div class="first-screen__slide swiper-slide">
+										<div class="first-slider_title _h2">
+											Контекстная реклама
+										</div>
+										<div class="_text" data-swiper-parallax-x="-1500">
+											сайтов: корпоративные сайты, поддержка сайтов
+										</div>
+									</div>
+									<div class="first-screen__slide swiper-slide">
+										<div class="first-slider_title _h2">Контекстная</div>
+										<div class="_text" data-swiper-parallax-x="-1500">
+											Разработка сайтов: лендинги, рпоративные сайты, поддержка
+											сайтов
+										</div>
+									</div>
+									<div class="first-screen__slide swiper-slide">
+										<div class="first-slider_title _h2">Реклама</div>
+										<div class="_text" data-swiper-parallax-x="-1500">
+											лендинги, интернет-магазины, корпоративные сайты,
+											поддержка сайтов
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="first-screen__cta">
+								<a class="_btn _normal _bright-fullfilled" href="./form.html"
+									>Заказать услугу</a
+								>
+								<a class="_btn _normal _bright-filled-20" href="./job.html"
+									>Наши вакансии</a
+								>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__underconstructing underconstructing">
+					<p class="_text _text--bright">
+						На данный момент сайт в разработке. Оставляйте заявку и мы с вами
+						свяжемся.
+					</p>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

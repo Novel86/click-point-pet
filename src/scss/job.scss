@@ -1,0 +1,29 @@
+.page {
+	&__job {
+	}
+}
+.page-job {
+	&__title {
+		margin-bottom: calc(30px + (70 - 30) * ((100vw - 320px) / (1100 - 320)));
+		color: $accentColor;
+	}
+
+	&__body {
+	}
+}
+
+.spollers {
+	&__item {
+		background-color: rgba(255, 255, 255, 0.2);
+		overflow: hidden;
+	}
+
+	&__title {
+	}
+
+	&__body {
+	}
+
+	&__content {
+	}
+}

@@ -1,0 +1,109 @@
+//====================заголовки======================
+h1,
+._h1 {
+	display: inline-block;
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-size: calc(52px + (100 - 52) * ((100vw - 320px) / (1100 - 320)));
+	font-weight: 800;
+	line-height: math.div(100, 105); /* 100% */
+	letter-spacing: calc(1px + (5 - 1) * ((100vw - 320px) / (1100 - 320)));
+	text-transform: uppercase;
+	// background-color: #0100ff;
+	// background: linear-gradient(160deg, #0100ff 0%, #8204ff 40%, #ff09ff 90%);
+	// -webkit-background-clip: text;
+	// -webkit-text-fill-color: transparent;
+	color: $brightColor;
+}
+
+h2,
+._h2 {
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-size: calc(30px + (52 - 30) * ((100vw - 320px) / (1100 - 320)));
+	font-style: normal;
+	font-weight: 800;
+	line-height: math.div(45, 45);
+	letter-spacing: 3.64px;
+	text-transform: uppercase;
+	color: $brightColor;
+	padding-bottom: rem(5);
+}
+
+._text {
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1100 - 320)));
+	&--bright {
+		color: $brightColor;
+	}
+}
+//====================кнопки======================
+
+._btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	white-space: nowrap;
+}
+
+._normal {
+	@media (max-width: 1100px) {
+		padding: 10px 20px;
+		font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1100 - 320)));
+	}
+	@media (width < 420px) {
+		width: 100%;
+	}
+	font-size: calc(17px + (40 - 17) * ((100vw - 1100px) / (3000 - 1100)));
+	padding-block: calc(12px + (23 - 12) * ((100vw - 1100px) / (3000 - 1100)));
+	padding-inline: calc(20px + (30 - 20) * ((100vw - 1100px) / (3000 - 1100)));
+	font-style: normal;
+	font-weight: 600;
+}
+
+._bright-fullfilled {
+	background-color: $accentColor2;
+	color: $brightColor;
+	padding-block: calc(13.5px + (25 - 13.5) * ((100vw - 1100px) / (3000 - 1100)));
+	transform: translate3d(0 -15px 0);
+	transition:
+		transform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+	@media (max-width: 1100px) {
+		padding-block: 12px;
+	}
+	&:hover {
+		box-shadow: 0 12px $mainColor;
+		transform: translate3d(0, -12px, 0);
+		color: $mainColor;
+		background-color: #f100f1;
+	}
+
+	&:active {
+		box-shadow: 0 12px $brightColor;
+		transform: translate3d(0, -12px, 0);
+		color: $brightColor;
+	}
+}
+
+._bright-filled-20 {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid $brightColor;
+	color: $brightColor;
+	transition:
+		transform 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out,
+		background-color 0.3s ease-in-out;
+
+	&:hover {
+		box-shadow: 0 12px $mainColor;
+		transform: translate3d(0, -12px, 0);
+		color: $mainColor;
+		background-color: rgba(145, 145, 145, 0.2);
+	}
+
+	&:active {
+		box-shadow: 0 12px $accentColor;
+		transform: translate3d(0, -12px, 0);
+		color: $accentColor2;
+	}
+}
