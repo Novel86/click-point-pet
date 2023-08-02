@@ -28,6 +28,19 @@ h2,
 	padding-bottom: rem(5);
 }
 
+h3,
+._h3 {
+	// font-family: "Fira Sans Condensed", sans-serif;
+	font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1100 - 320)));
+	font-style: normal;
+	font-weight: 800;
+	line-height: math.div(45, 45);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $brightColor;
+	padding-bottom: rem(5);
+}
+
 ._text {
 	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1100 - 320)));
 	&--bright {
